@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const BASE_URL = "https://api.giphy.com";
-  const API_KEY = "t30CTa865L2Q4pyc8vcUjD5eG0ehOttC";
+  const BASE_URL = process.env.BASE_URL;
+  const API_KEY = process.env.API_KEY;
 
   const button = document.querySelector("button");
   const giphyInput = document.querySelector("input");
